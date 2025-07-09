@@ -8,12 +8,28 @@
     <title>Pyramid</title>
 </head>
 <body>
-    <section id="content">
-        <label id="result"></label>
-        <button id="start-btn">Start</button>
-    </section>
-    <footer>&copy Leonardo Torres</footer>
+    <main>
+        <section id="content">
+            <h1>Pyramid Generator</h1>
+            <pre id="result"></pre>
+            <form id="pyramid-form">
+                <div id="input-row">
+                    <label for="char">Character:</label>
+                    <input id="char" name="char" value="#" type="text" maxlength="1" required>
+
+                    <label for="length">Length:</label>
+                    <input id="length" name="length" value="10" type="number" min="3" max="30" required>
+                </div>
+                
+                <button id="start-btn" type="button">Start</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <small>&copy Leonardo Torres</small>
+    </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 </html>
