@@ -41,19 +41,27 @@ body {
 
 #input-row {
     margin: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     width: 60%;
+    margin: auto;
+    width: 100%;
+    max-width: 20rem;
 }
 
 input {
-    width: 15%;
-    height: 1.5em;
+    flex: 1 1 15%;
+    min-width: 20px;
+    height: 1.5rem;
     padding-left: 5px;
 }
 
 #start-btn {
     margin: 10px auto;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding: 10px 20px;
     width: 15rem;
 }
